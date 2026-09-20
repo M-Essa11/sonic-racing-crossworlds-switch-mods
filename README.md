@@ -5,7 +5,7 @@
 
 Experimental community ports of **Fl4sh9174's earlier-version patches** for the Nintendo Switch version of Sonic Racing: CrossWorlds. Includes **60 FPS, 1080p, improved FOV, and improved level of detail**.
 
-**Initial user testing in Eden on Windows reports that the patches work.** This is an early test report, not comprehensive validation. Timing, every game mode, and long-session stability still need testing. This is an independent port, not an official Fl4sh release or endorsement.
+**Initial user testing in Eden on Windows reports that the patches work.** Published as a regular release, with the experimental label retained while community testing expands. Feedback and bug reports are welcome, especially for timing, different game modes, and long-session stability. This is an independent port, not an official Fl4sh release or endorsement.
 
 ## Download
 
