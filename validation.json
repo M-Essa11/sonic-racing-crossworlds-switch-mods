@@ -1,0 +1,312 @@
+{
+  "build_id": "6455A932B210658FFF0EACCC1D143A22",
+  "main_sha256": "323ba619a245648498292aa9a6ced70f5574655c05baf41f2686abaa3284da14",
+  "changes": [
+    {
+      "mod": "[1920x1080 V1.41 Experimental]",
+      "source_offset": "007358D8",
+      "target_offset": "00732A48",
+      "original": "0018211e",
+      "replacement": "00102e1e"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "016F4900",
+      "target_offset": "016F9FD4",
+      "original": "0a912a39",
+      "replacement": "1f912a39"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "04B6C0A8",
+      "target_offset": "04BD191C",
+      "original": "0d3ea852",
+      "replacement": "0d4ea852"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "03F60E0C",
+      "target_offset": "03F6DC7C",
+      "original": "68926a39",
+      "replacement": "e8008052"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72614",
+      "target_offset": "05CEDFB0",
+      "original": "00000000",
+      "replacement": "00000000"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72618",
+      "target_offset": "05CEDFB4",
+      "original": "19000000",
+      "replacement": "19000000"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C7261C",
+      "target_offset": "05CEDFB8",
+      "original": "32000000",
+      "replacement": "32000000"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72620",
+      "target_offset": "05CEDFBC",
+      "original": "01000000",
+      "replacement": "01000000"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72624",
+      "target_offset": "05CEDFC0",
+      "original": "02000000",
+      "replacement": "01000000"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72628",
+      "target_offset": "05CEDFC4",
+      "original": "0ad7233d",
+      "replacement": "0ad7233d"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C7262C",
+      "target_offset": "05CEDFC8",
+      "original": "0ad7a33c",
+      "replacement": "0ad7a33c"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72630",
+      "target_offset": "05CEDFCC",
+      "original": "9a99993f",
+      "replacement": "0000803f"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72634",
+      "target_offset": "05CEDFD0",
+      "original": "01000000",
+      "replacement": "01000000"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72638",
+      "target_offset": "05CEDFD4",
+      "original": "1e000000",
+      "replacement": "3c000000"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C7263C",
+      "target_offset": "05CEDFD8",
+      "original": "3c000000",
+      "replacement": "3c000000"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72640",
+      "target_offset": "05CEDFDC",
+      "original": "01000000",
+      "replacement": "01000000"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72644",
+      "target_offset": "05CEDFE0",
+      "original": "02000000",
+      "replacement": "01000000"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72648",
+      "target_offset": "05CEDFE4",
+      "original": "8988083d",
+      "replacement": "8988883c"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C7264C",
+      "target_offset": "05CEDFE8",
+      "original": "8988883c",
+      "replacement": "8988883c"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72650",
+      "target_offset": "05CEDFEC",
+      "original": "0000803f",
+      "replacement": "0000803f"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72654",
+      "target_offset": "05CEDFF0",
+      "original": "01000000",
+      "replacement": "01000000"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72658",
+      "target_offset": "05CEDFF4",
+      "original": "32000000",
+      "replacement": "32000000"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C7265C",
+      "target_offset": "05CEDFF8",
+      "original": "32000000",
+      "replacement": "32000000"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72660",
+      "target_offset": "05CEDFFC",
+      "original": "01000000",
+      "replacement": "01000000"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72664",
+      "target_offset": "05CEE000",
+      "original": "01000000",
+      "replacement": "01000000"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72668",
+      "target_offset": "05CEE004",
+      "original": "0ad7a33c",
+      "replacement": "0ad7a33c"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C7266C",
+      "target_offset": "05CEE008",
+      "original": "0ad7a33c",
+      "replacement": "0ad7a33c"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72670",
+      "target_offset": "05CEE00C",
+      "original": "9a99993f",
+      "replacement": "0000803f"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72674",
+      "target_offset": "05CEE010",
+      "original": "03000000",
+      "replacement": "03000000"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72678",
+      "target_offset": "05CEE014",
+      "original": "3c000000",
+      "replacement": "3c000000"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C7267C",
+      "target_offset": "05CEE018",
+      "original": "3c000000",
+      "replacement": "3c000000"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72680",
+      "target_offset": "05CEE01C",
+      "original": "01000000",
+      "replacement": "01000000"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72684",
+      "target_offset": "05CEE020",
+      "original": "01000000",
+      "replacement": "01000000"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72688",
+      "target_offset": "05CEE024",
+      "original": "8988883c",
+      "replacement": "8988883c"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C7268C",
+      "target_offset": "05CEE028",
+      "original": "8988883c",
+      "replacement": "8988883c"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72690",
+      "target_offset": "05CEE02C",
+      "original": "0000803f",
+      "replacement": "0000803f"
+    },
+    {
+      "mod": "[60 FPS V1.41 Experimental]",
+      "source_offset": "05C72694",
+      "target_offset": "05CEE030",
+      "original": "03000000",
+      "replacement": "03000000"
+    },
+    {
+      "mod": "[Improved FOV V1.41 Experimental]",
+      "source_offset": "00E328C4",
+      "target_offset": "00E42FD4",
+      "original": "003002bd",
+      "replacement": "01d02e1e"
+    },
+    {
+      "mod": "[Improved FOV V1.41 Experimental]",
+      "source_offset": "00E328C8",
+      "target_offset": "00E42FD8",
+      "original": "c0035fd6",
+      "replacement": "4719f714"
+    },
+    {
+      "mod": "[Improved FOV V1.41 Experimental]",
+      "source_offset": "04B9C174",
+      "target_offset": "04C094F4",
+      "original": "1f2003d5",
+      "replacement": "0008211e"
+    },
+    {
+      "mod": "[Improved FOV V1.41 Experimental]",
+      "source_offset": "04B9C178",
+      "target_offset": "04C094F8",
+      "original": "1f2003d5",
+      "replacement": "003002bd"
+    },
+    {
+      "mod": "[Improved FOV V1.41 Experimental]",
+      "source_offset": "04B9C17C",
+      "target_offset": "04C094FC",
+      "original": "1f2003d5",
+      "replacement": "c0035fd6"
+    },
+    {
+      "mod": "[Improved Level of Detail V1.41 Experimental]",
+      "source_offset": "00DD7CE8",
+      "target_offset": "00DE89C8",
+      "original": "600640bd",
+      "replacement": "00103a1e"
+    }
+  ],
+  "runtime_validation": {
+    "status": "initial_user_report_successful",
+    "environment": "Eden on Windows",
+    "scope": "User reports patches seem to work fine. Per-mod coverage, FPS measurements, timing and extended stability are not independently verified."
+  }
+}

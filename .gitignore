@@ -1,0 +1,7 @@
+*.nso
+*.nsp
+*.xci
+*.nca
+*.keys
+*.log
+__pycache__/

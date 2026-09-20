@@ -1,0 +1,16 @@
+@nsobid-6455A932B210658FFF0EACCC1D143A22
+
+# Sonic Racing: CrossWorlds v1.41 - [Improved FOV V1.41 Experimental]
+# Experimental port of Fl4sh9174 patches; initial user test successful; broader validation pending.
+# Original author: https://github.com/Fl4sh9174
+
+@flag print_values
+@flag offset_shift 0x100
+
+@enabled
+00E42FD4 01D02E1E
+00E42FD8 4719F714
+04C094F4 0008211E
+04C094F8 003002BD
+04C094FC C0035FD6
+@stop
