@@ -1,4 +1,4 @@
-# Sonic Racing: CrossWorlds v1.41 â€” Experimental Switch Mods
+# Sonic Racing: CrossWorlds v1.41 — Experimental Switch Mods
 
 ![Release](https://img.shields.io/badge/status-released-green)
 ![Game version](https://img.shields.io/badge/game-v1.41-blue)
@@ -75,7 +75,7 @@ The reference executable had a zeroed Build ID and unverified provenance; it was
 
 ## Credits and rights
 
-Original patch work: **[Fl4sh9174](https://github.com/Fl4sh9174)** â€” [upstream mod repository](https://github.com/Fl4sh9174/Switch-Emulator-Ultrawide-FPS-Mods). [Support Fl4sh on Ko-fi](https://ko-fi.com/Fl4sh9174).
+Original patch work: **[Fl4sh9174](https://github.com/Fl4sh9174)** — [upstream mod repository](https://github.com/Fl4sh9174/Switch-Emulator-Ultrawide-FPS-Mods). [Support Fl4sh on Ko-fi](https://ko-fi.com/Fl4sh9174).
 
 This repository provides a community v1.41 port maintained by M-Essa11, prepared with AI-assisted binary analysis. Credit for the original mod behavior belongs to Fl4sh9174.
 
