@@ -1,0 +1,16 @@
+@nsobid-6455A932B210658FFF0EACCC1D143A22
+
+# Sonic Racing: CrossWorlds v1.41 - [3840x2160 V1.41]
+# community port. Gameplay testing pending.
+# Original patches by Fl4sh9174
+
+@flag print_values
+@flag offset_shift 0x100
+
+@enabled
+00732A48 00102E1E
+@stop
+
+@Fl4sh_#9174
+https://github.com/Fl4sh9174
+https://Ko-fi.com/Fl4sh9174

@@ -1,0 +1,12 @@
+@nsobid-6455A932B210658FFF0EACCC1D143A22
+
+# Sonic Racing: CrossWorlds v1.41 - [Improved Level of Detail V1.41]
+# port of Fl4sh9174 patches; initial user test successful; broader validation pending.
+# Original author: https://github.com/Fl4sh9174
+
+@flag print_values
+@flag offset_shift 0x100
+
+@enabled
+00DE89C8 00103A1E
+@stop
