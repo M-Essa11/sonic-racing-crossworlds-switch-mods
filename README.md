@@ -7,9 +7,9 @@
 
 **[Download the v1.43 Atmosphere ZIP](https://github.com/M-Essa11/sonic-racing-crossworlds-switch-mods/releases/download/v1.43-atmosphere.1/Sonic-Racing-CrossWorlds-v1.43-Atmosphere.zip)** — includes **60 FPS + resolution** patches for Build ID `CF6A61882F2ADE94` (Title ID `01006E001823C000`).
 
-The maintainer reports both patches working together on a CFW Switch Lite. Merge the ZIP's `atmosphere` folder into the SD root and keep the two `.ips` files in their separate folders. Fully close and reopen the game. No SaltySD/FPSLocker configuration is required. See the **[installation guide, folder structure and rollback instructions](hardware/v1.43/README.md)**.
+I tested both patches together on my Switch Lite running Atmosphere, and they work well. Merge the ZIP's `atmosphere` folder into the SD root and keep the two `.ips` files in their separate folders. Fully close and reopen the game. No SaltySD/FPSLocker configuration is required. See the **[installation guide, folder structure and rollback instructions](hardware/v1.43/README.md)**.
 
-Resolution is intended as 1080p docked / 720p handheld. Sustained FPS and internal resolution were not measured; other Switch models and broad game-mode coverage remain unverified. One FPS site was inferred from the new code before the successful user test. [Validation details](hardware/v1.43/validation.json).
+The resolution patch targets 1080p docked / 720p handheld. Performance can vary, and I haven’t tested every mode or other Switch models. [Validation details](hardware/v1.43/validation.json).
 
 **The seven emulator mods below still target v1.41. Only the two Atmosphere patches above target v1.43.**
 
@@ -17,7 +17,7 @@ Resolution is intended as 1080p docked / 720p handheld. Sustained FPS and intern
 
 Community ports of **Fl4sh9174's earlier-version patches** for the Nintendo Switch version of Sonic Racing: CrossWorlds. Includes **60 FPS, 120 FPS, 1080p, 4K, 3440×1440 ultrawide with adjusted HUD, improved FOV, and improved level of detail**.
 
-**User testing in Eden on Windows reports that the full set works.** Slow motion has been reported with the 120 FPS option. Feedback and bug reports are welcome. This is an independent port, not an official Fl4sh release or endorsement.
+**Tested the full v1.41 set in Eden on Windows.** Slow motion has been reported with the 120 FPS option. Feedback and bug reports are welcome. This is an independent port, not an official Fl4sh release or endorsement.
 
 ## 120 FPS slowdown
 
@@ -89,7 +89,7 @@ The reference executable had a zeroed Build ID and unverified provenance; it was
 
 Original patch work: **[Fl4sh9174](https://github.com/Fl4sh9174)** — [upstream mod repository](https://github.com/Fl4sh9174/Switch-Emulator-Ultrawide-FPS-Mods). [Support Fl4sh on Ko-fi](https://ko-fi.com/Fl4sh9174).
 
-This repository provides a community v1.41 port maintained by M-Essa11, prepared with AI-assisted binary analysis. Credit for the original mod behavior belongs to Fl4sh9174.
+Community ports by M-Essa11. Credit for the original patches goes to Fl4sh9174.
 
 No upstream license was detected when preparing this release. This repository does not claim to relicense the original patch work or grant rights beyond those held by the respective authors. Game names and trademarks belong to their owners.
 

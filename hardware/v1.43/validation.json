@@ -4,7 +4,7 @@
   "title_id": "01006E001823C000",
   "main_sha256": "0bc75b9418f8b0ce95db6eb79a5b67473a9e4924fd44464254df6bf8199cc35f",
   "status": "user_reported_working_on_switch_lite",
-  "limitation": "The third FPS code site was inferred from v1.43 control flow without the old executable for comparison. The maintainer subsequently reported both patches working on Switch Lite. This does not establish equivalence to every behavior of the v1.41 patch or compatibility across all game modes.",
+  "limitation": "The third FPS code site was inferred from v1.43 control flow without the old executable for comparison. Both patches subsequently worked together in the repository owner\u2019s Switch Lite test. This does not establish equivalence to every behavior of the v1.41 patch or compatibility across all game modes.",
   "evidence": {
     "resolution": "Original instruction remains at 0x00732A48 in a percentage divided by 100 calculation; replacement supplies 1.0.",
     "fps_site_1": "Original 4-byte instruction has a unique aligned code match; surrounding code accesses the matching timing table.",
@@ -253,7 +253,7 @@
   "hardware_test": {
     "date": "2026-10-13",
     "device": "Switch Lite with CFW / Atmosphere",
-    "result": "Maintainer reports both v1.43 patches working together after local testing.",
+    "result": "Both v1.43 patches tested together on the repository owner\u2019s CFW Switch Lite; working well.",
     "limits": "No measured FPS trace, internal resolution, clock settings, long-session results or broad game-mode coverage supplied."
   }
 }

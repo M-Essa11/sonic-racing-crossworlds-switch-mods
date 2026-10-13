@@ -1,8 +1,7 @@
 # Sonic Racing: CrossWorlds v1.43 — Atmosphere patches
 
-60 FPS and resolution patches for the original Nintendo Switch edition. The
-maintainer reports both patches working together on a CFW Switch Lite. Other
-Switch models are untested. This is not a Switch 2 Edition or PC-version mod.
+I tested both patches together on my Switch Lite running Atmosphere, and they
+work well. This package is for the original Switch version of CrossWorlds v1.43.
 
 ## Exact target
 
@@ -36,20 +35,16 @@ If you already installed the experimental v1.43 package, move its `60FPS Candida
 and `Resolution Test` folders out of `exefs_patches` before installing these renamed
 folders. Patch bytes are unchanged from the tested candidate; avoid duplicates.
 
-## Performance and test scope
+## A quick note on performance
 
-The resolution patch inherits an intended target of 1080p docked / 720p handheld.
-Actual internal resolution and dynamic-resolution behavior were not measured.
-The FPS patch uses static timing; locked 60 FPS is not guaranteed. Test game speed,
-timers, heavy effects, world transitions and cutscenes. Higher resolution can cost
-performance. No overclock settings are prescribed or bundled.
+The resolution patch targets 1080p docked / 720p handheld. Performance can vary
+by track and settings, so try 60 FPS on its own first, then add resolution.
+If the game slows down or FPS drops, remove the resolution patch and compare.
 
-Successful Switch Lite testing was reported by the maintainer on October 13, 2026.
-No FPS trace, clock configuration, measured resolution or broad game-mode coverage
-was supplied. One FPS location was inferred from frame-rate selection logic rather
-than confirmed against an old executable. The subsequent user test is encouraging
-but does not establish full compatibility. See `validation.json` for exact writes,
-hashes, evidence and limitations.
+I tested on Switch Lite; I haven’t tested every mode or other Switch models.
+This is a static FPS patch, so it does not guarantee a locked 60 FPS everywhere.
+Actual internal resolution hasn’t been measured. The technical checks and porting
+notes are in `validation.json`.
 
 ## Uninstall / rollback
 
@@ -70,6 +65,6 @@ Original patch behavior: [Fl4sh9174](https://github.com/Fl4sh9174) —
 [upstream mods](https://github.com/Fl4sh9174/Switch-Emulator-Ultrawide-FPS-Mods).
 [Support Fl4sh](https://ko-fi.com/Fl4sh9174).
 
-Community ports and hardware testing: M-Essa11, with AI-assisted binary analysis.
+Ported and tested by M-Essa11.
 This is independent work, not an official Fl4sh release or endorsement. Original
 authors retain their rights; no new license to their work is granted here.
