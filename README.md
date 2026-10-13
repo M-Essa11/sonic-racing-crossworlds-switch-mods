@@ -5,7 +5,7 @@
 
 ## v1.43 for Switch / Switch Lite (Atmosphere)
 
-**[Download the v1.43 Atmosphere ZIP](downloads/Sonic-Racing-CrossWorlds-v1.43-Atmosphere.zip?raw=true)** — includes **60 FPS + resolution** patches for Build ID `CF6A61882F2ADE94` (Title ID `01006E001823C000`).
+**[Download the v1.43 Atmosphere ZIP](https://github.com/M-Essa11/sonic-racing-crossworlds-switch-mods/releases/download/v1.43-atmosphere.1/Sonic-Racing-CrossWorlds-v1.43-Atmosphere.zip)** — includes **60 FPS + resolution** patches for Build ID `CF6A61882F2ADE94` (Title ID `01006E001823C000`).
 
 The maintainer reports both patches working together on a CFW Switch Lite. Merge the ZIP's `atmosphere` folder into the SD root and keep the two `.ips` files in their separate folders. Fully close and reopen the game. No SaltySD/FPSLocker configuration is required. See the **[installation guide, folder structure and rollback instructions](hardware/v1.43/README.md)**.
 
@@ -25,7 +25,7 @@ Slow motion has been reported with the 120 FPS option. These are static FPS patc
 
 ## v1.41 emulator download
 
-Download the mod ZIP from the [latest release](https://github.com/M-Essa11/sonic-racing-crossworlds-switch-mods/releases/latest).
+Download the mod ZIP from the [v1.41 emulator release](https://github.com/M-Essa11/sonic-racing-crossworlds-switch-mods/releases/tag/v1.41.2).
 
 ## v1.41 compatibility
 
