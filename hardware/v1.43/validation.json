@@ -1,0 +1,259 @@
+{
+  "version": "1.43",
+  "build_id": "CF6A61882F2ADE943495CF2918A73E07",
+  "title_id": "01006E001823C000",
+  "main_sha256": "0bc75b9418f8b0ce95db6eb79a5b67473a9e4924fd44464254df6bf8199cc35f",
+  "status": "user_reported_working_on_switch_lite",
+  "limitation": "The third FPS code site was inferred from v1.43 control flow without the old executable for comparison. The maintainer subsequently reported both patches working on Switch Lite. This does not establish equivalence to every behavior of the v1.41 patch or compatibility across all game modes.",
+  "evidence": {
+    "resolution": "Original instruction remains at 0x00732A48 in a percentage divided by 100 calculation; replacement supplies 1.0.",
+    "fps_site_1": "Original 4-byte instruction has a unique aligned code match; surrounding code accesses the matching timing table.",
+    "fps_site_2": "Original 4-byte instruction has a unique aligned code match; changes the 30.0 float written to the fixed-rate field into 60.0.",
+    "fps_site_3": "Five aligned original-instruction matches exist. Selected 0x03F6EC3C by control-flow inspection: bit 6 chooses between the computed max tick rate and the fixed-rate field at object+0xAA8. mov w8,7 forces the computed-rate path. This is an inference and requires testing.",
+    "table": "Unique exact 132-byte match; all original values checked."
+  },
+  "patches": [
+    {
+      "name": "Static 60 FPS",
+      "path": "atmosphere/exefs_patches/Sonic Racing CW v1.43 - Static 60FPS/CF6A61882F2ADE943495CF2918A73E07.ips",
+      "sha256": "72c1551c7b909aa53a10de249c67c5d09818a802e5ed115bfb95385e663dfa7a",
+      "writes": [
+        {
+          "old_v141_offset": "016F9FD4",
+          "offset": "016F95D4",
+          "original": "0a912a39",
+          "replacement": "1f912a39"
+        },
+        {
+          "old_v141_offset": "04BD191C",
+          "offset": "04BD2D9C",
+          "original": "0d3ea852",
+          "replacement": "0d4ea852"
+        },
+        {
+          "old_v141_offset": "03F6DC7C",
+          "offset": "03F6EC3C",
+          "original": "68926a39",
+          "replacement": "e8008052"
+        },
+        {
+          "old_v141_offset": "05CEDFB0",
+          "offset": "05CEFFB0",
+          "original": "00000000",
+          "replacement": "00000000"
+        },
+        {
+          "old_v141_offset": "05CEDFB4",
+          "offset": "05CEFFB4",
+          "original": "19000000",
+          "replacement": "19000000"
+        },
+        {
+          "old_v141_offset": "05CEDFB8",
+          "offset": "05CEFFB8",
+          "original": "32000000",
+          "replacement": "32000000"
+        },
+        {
+          "old_v141_offset": "05CEDFBC",
+          "offset": "05CEFFBC",
+          "original": "01000000",
+          "replacement": "01000000"
+        },
+        {
+          "old_v141_offset": "05CEDFC0",
+          "offset": "05CEFFC0",
+          "original": "02000000",
+          "replacement": "01000000"
+        },
+        {
+          "old_v141_offset": "05CEDFC4",
+          "offset": "05CEFFC4",
+          "original": "0ad7233d",
+          "replacement": "0ad7233d"
+        },
+        {
+          "old_v141_offset": "05CEDFC8",
+          "offset": "05CEFFC8",
+          "original": "0ad7a33c",
+          "replacement": "0ad7a33c"
+        },
+        {
+          "old_v141_offset": "05CEDFCC",
+          "offset": "05CEFFCC",
+          "original": "9a99993f",
+          "replacement": "0000803f"
+        },
+        {
+          "old_v141_offset": "05CEDFD0",
+          "offset": "05CEFFD0",
+          "original": "01000000",
+          "replacement": "01000000"
+        },
+        {
+          "old_v141_offset": "05CEDFD4",
+          "offset": "05CEFFD4",
+          "original": "1e000000",
+          "replacement": "3c000000"
+        },
+        {
+          "old_v141_offset": "05CEDFD8",
+          "offset": "05CEFFD8",
+          "original": "3c000000",
+          "replacement": "3c000000"
+        },
+        {
+          "old_v141_offset": "05CEDFDC",
+          "offset": "05CEFFDC",
+          "original": "01000000",
+          "replacement": "01000000"
+        },
+        {
+          "old_v141_offset": "05CEDFE0",
+          "offset": "05CEFFE0",
+          "original": "02000000",
+          "replacement": "01000000"
+        },
+        {
+          "old_v141_offset": "05CEDFE4",
+          "offset": "05CEFFE4",
+          "original": "8988083d",
+          "replacement": "8988883c"
+        },
+        {
+          "old_v141_offset": "05CEDFE8",
+          "offset": "05CEFFE8",
+          "original": "8988883c",
+          "replacement": "8988883c"
+        },
+        {
+          "old_v141_offset": "05CEDFEC",
+          "offset": "05CEFFEC",
+          "original": "0000803f",
+          "replacement": "0000803f"
+        },
+        {
+          "old_v141_offset": "05CEDFF0",
+          "offset": "05CEFFF0",
+          "original": "01000000",
+          "replacement": "01000000"
+        },
+        {
+          "old_v141_offset": "05CEDFF4",
+          "offset": "05CEFFF4",
+          "original": "32000000",
+          "replacement": "32000000"
+        },
+        {
+          "old_v141_offset": "05CEDFF8",
+          "offset": "05CEFFF8",
+          "original": "32000000",
+          "replacement": "32000000"
+        },
+        {
+          "old_v141_offset": "05CEDFFC",
+          "offset": "05CEFFFC",
+          "original": "01000000",
+          "replacement": "01000000"
+        },
+        {
+          "old_v141_offset": "05CEE000",
+          "offset": "05CF0000",
+          "original": "01000000",
+          "replacement": "01000000"
+        },
+        {
+          "old_v141_offset": "05CEE004",
+          "offset": "05CF0004",
+          "original": "0ad7a33c",
+          "replacement": "0ad7a33c"
+        },
+        {
+          "old_v141_offset": "05CEE008",
+          "offset": "05CF0008",
+          "original": "0ad7a33c",
+          "replacement": "0ad7a33c"
+        },
+        {
+          "old_v141_offset": "05CEE00C",
+          "offset": "05CF000C",
+          "original": "9a99993f",
+          "replacement": "0000803f"
+        },
+        {
+          "old_v141_offset": "05CEE010",
+          "offset": "05CF0010",
+          "original": "03000000",
+          "replacement": "03000000"
+        },
+        {
+          "old_v141_offset": "05CEE014",
+          "offset": "05CF0014",
+          "original": "3c000000",
+          "replacement": "3c000000"
+        },
+        {
+          "old_v141_offset": "05CEE018",
+          "offset": "05CF0018",
+          "original": "3c000000",
+          "replacement": "3c000000"
+        },
+        {
+          "old_v141_offset": "05CEE01C",
+          "offset": "05CF001C",
+          "original": "01000000",
+          "replacement": "01000000"
+        },
+        {
+          "old_v141_offset": "05CEE020",
+          "offset": "05CF0020",
+          "original": "01000000",
+          "replacement": "01000000"
+        },
+        {
+          "old_v141_offset": "05CEE024",
+          "offset": "05CF0024",
+          "original": "8988883c",
+          "replacement": "8988883c"
+        },
+        {
+          "old_v141_offset": "05CEE028",
+          "offset": "05CF0028",
+          "original": "8988883c",
+          "replacement": "8988883c"
+        },
+        {
+          "old_v141_offset": "05CEE02C",
+          "offset": "05CF002C",
+          "original": "0000803f",
+          "replacement": "0000803f"
+        },
+        {
+          "old_v141_offset": "05CEE030",
+          "offset": "05CF0030",
+          "original": "03000000",
+          "replacement": "03000000"
+        }
+      ]
+    },
+    {
+      "name": "Resolution (1080p docked / 720p handheld intended)",
+      "path": "atmosphere/exefs_patches/Sonic Racing CW v1.43 - Resolution/CF6A61882F2ADE943495CF2918A73E07.ips",
+      "sha256": "e71c6140f655ebefb6805c1d54acd4feaa3e6ffceaf4bb64d54d4a164e0cd979",
+      "writes": [
+        {
+          "old_v141_offset": "00732A48",
+          "offset": "00732A48",
+          "original": "0018211e",
+          "replacement": "00102e1e"
+        }
+      ]
+    }
+  ],
+  "hardware_test": {
+    "date": "2026-10-13",
+    "device": "Switch Lite with CFW / Atmosphere",
+    "result": "Maintainer reports both v1.43 patches working together after local testing.",
+    "limits": "No measured FPS trace, internal resolution, clock settings, long-session results or broad game-mode coverage supplied."
+  }
+}

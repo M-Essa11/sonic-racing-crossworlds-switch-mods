@@ -1,7 +1,19 @@
-# Sonic Racing: CrossWorlds v1.41 — Experimental Switch Mods
+# Sonic Racing: CrossWorlds — Switch Mods
 
 ![Release](https://img.shields.io/badge/status-released-green)
-![Game version](https://img.shields.io/badge/game-v1.41-blue)
+![Game version](https://img.shields.io/badge/game-v1.43_hardware_%7C_v1.41_emulator-blue)
+
+## v1.43 for Switch / Switch Lite (Atmosphere)
+
+**[Download the v1.43 Atmosphere ZIP](downloads/Sonic-Racing-CrossWorlds-v1.43-Atmosphere.zip?raw=true)** — includes **60 FPS + resolution** patches for Build ID `CF6A61882F2ADE94` (Title ID `01006E001823C000`).
+
+The maintainer reports both patches working together on a CFW Switch Lite. Merge the ZIP's `atmosphere` folder into the SD root and keep the two `.ips` files in their separate folders. Fully close and reopen the game. No SaltySD/FPSLocker configuration is required. See the **[installation guide, folder structure and rollback instructions](hardware/v1.43/README.md)**.
+
+Resolution is intended as 1080p docked / 720p handheld. Sustained FPS and internal resolution were not measured; other Switch models and broad game-mode coverage remain unverified. One FPS site was inferred from the new code before the successful user test. [Validation details](hardware/v1.43/validation.json).
+
+**The seven emulator mods below still target v1.41. Only the two Atmosphere patches above target v1.43.**
+
+## v1.41 emulator package
 
 Community ports of **Fl4sh9174's earlier-version patches** for the Nintendo Switch version of Sonic Racing: CrossWorlds. Includes **60 FPS, 120 FPS, 1080p, 4K, 3440×1440 ultrawide with adjusted HUD, improved FOV, and improved level of detail**.
 
@@ -11,11 +23,11 @@ Community ports of **Fl4sh9174's earlier-version patches** for the Nintendo Swit
 
 Slow motion has been reported with the 120 FPS option. These are static FPS patches, not a dynamic-FPS solution. If you experience slowdown, try **60 FPS** and report your results. Performance and compatibility vary by system.
 
-## Download
+## v1.41 emulator download
 
 Download the mod ZIP from the [latest release](https://github.com/M-Essa11/sonic-racing-crossworlds-switch-mods/releases/latest).
 
-## Compatibility
+## v1.41 compatibility
 
 | Item | Target |
 | --- | --- |
@@ -25,7 +37,7 @@ Download the mod ZIP from the [latest release](https://github.com/M-Essa11/sonic
 | Build ID | `6455A932B210658FFF0EACCC1D143A22` |
 | Reported test environment | Eden on Windows |
 
-These patches target this exact executable build. Other game updates, emulators, and real hardware are unverified. They are not PC-version or Switch 2 Edition mods. Maintaining 60 FPS depends on available performance; this is not a dynamic-FPS implementation.
+These patches target this exact executable build. Other game updates and environments for these v1.41 files are unverified; the separate v1.43 hardware package is documented above. They are not PC-version or Switch 2 Edition mods. Maintaining 60 FPS depends on available performance; this is not a dynamic-FPS implementation.
 
 ## Included patches
 
