@@ -1,4 +1,4 @@
-# Sonic Racing: CrossWorlds v1.43 â€” local emulator test
+# Sonic Racing: CrossWorlds v1.43 - Emulator Mods
 
 Ports of Fl4sh9174's patches by M-Essa11. For Eden and compatible Switch emulators.
 Tested in Eden on Windows by M-Essa11. All seven mods work in that setup.
