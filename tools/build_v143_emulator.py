@@ -193,16 +193,16 @@ def main():
     report = {
         "version": "1.43", "title_id": "01006E001823C000", "build_id": MAIN_BID,
         "main_sha256": MAIN_SHA, "sdk_build_id": SDK_BID, "sdk_sha256": SDK_SHA,
-        "status": "release_static_checks_passed", "runtime_tested": False,
+        "status": "release_user_tested_eden", "runtime_tested": True, "runtime_test_report": "M-Essa11 reports all seven mods working in Eden on Windows, 2026-10-29",
         "original_byte_checks": 100, "mod_count": 7,
         "notes": [
             "60 FPS mapping inherited from the previously hardware-tested v1.43 package; third site was originally inferred without v1.41 code context.",
             "FOV setter is a unique STR S0,[X0,#0x230];RET sequence. Its helper preserves the original store/return after multiplying by 1.375.",
-            "LOD instruction relocated by nearby setting-call structure and expected original bytes, without the old executable for full context comparison; effect needs gameplay confirmation.",
+            "LOD instruction relocated by nearby setting-call structure and expected original bytes, without the old executable for full context comparison; effect reported working by M-Essa11 in Eden.",
             "Helpers use verified three-NOP padding after RET; no direct original B/BL/B.cond/CBZ/CBNZ/TBZ/TBNZ targets those slots.",
             "Ultrawide keeps the inherited active FMOV S0,#2.375. The inherited aspect-load helper remains dormant; its address calculation and return are nevertheless relocated correctly.",
-            "SDK hash matches the reference SDK. 120 FPS remains static and has known slowdown reports from v1.41; real-time game speed is unverified here.",
-            "4K and ultrawide PAK compatibility, effective resolution, HUD alignment, and all camera/LOD behavior require emulator testing.",
+            "SDK hash matches the reference SDK. 120 FPS remains static and has known slowdown reports from v1.41; M-Essa11 reports the v1.43 set working in Eden; the historical slowdown limitation remains relevant on other setups.",
+            "M-Essa11 reports all seven mods working in Eden. Exact internal resolution has not been instrumented; other emulators and configurations remain unverified.",
         ],
         "patches": groups, "configuration_archives": archives,
     }
@@ -251,7 +251,7 @@ def main():
             if file.is_file():
                 assert z.read(file.relative_to(mod_root).as_posix()) == file.read_bytes()
     print(json.dumps({"zip": str(archive), "sha256": sha(archive.read_bytes()),
-                      "mods": len(groups), "writes_checked": 100, "runtime_tested": False}, indent=2))
+                      "mods": len(groups), "writes_checked": 100, "runtime_tested": True, "runtime_test_report": "M-Essa11 reports all seven mods working in Eden on Windows, 2026-10-29"}, indent=2))
 
 if __name__ == "__main__":
     main()

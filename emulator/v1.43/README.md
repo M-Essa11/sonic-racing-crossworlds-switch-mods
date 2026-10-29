@@ -1,8 +1,8 @@
 # Sonic Racing: CrossWorlds v1.43 â€” local emulator test
 
 Ports of Fl4sh9174's patches by M-Essa11. For Eden and compatible Switch emulators.
-These files have passed executable-byte and package checks. This full emulator
-set has not yet been tested in-game on v1.43.
+Tested in Eden on Windows by M-Essa11. All seven mods work in that setup.
+The files also passed executable-byte and package checks.
 
 Game: Nintendo Switch edition, title ID `01006E001823C000`.
 Required main Build ID: `CF6A61882F2ADE943495CF2918A73E07`.
@@ -45,7 +45,7 @@ Choose **one FPS option** and **one resolution/aspect option**. FOV and LOD are
 separate optional changes. Keep both `1.43.pchtxt` and `v2.pchtxt` inside 120 FPS.
 For 4K/ultrawide, start in docked mode and at the emulator's native/1x resolution;
 additional emulator resolution scaling can increase the render resolution further.
-Effective output/internal resolution still needs to be measured in-game.
+Exact internal resolution has not been instrumented.
 
 ## Testing
 

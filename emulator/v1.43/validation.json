@@ -5,18 +5,19 @@
   "main_sha256": "0bc75b9418f8b0ce95db6eb79a5b67473a9e4924fd44464254df6bf8199cc35f",
   "sdk_build_id": "AD9EE4518B1D8CA811FBDF35FC4F26D5FC1ADA57",
   "sdk_sha256": "085c580b2e172404c48f9ed84caf7a47895269c1df664fe4a0cad02b880243e2",
-  "status": "release_static_checks_passed",
-  "runtime_tested": false,
+  "status": "release_user_tested_eden",
+  "runtime_tested": true,
+  "runtime_test_report": "M-Essa11 reports all seven mods working in Eden on Windows, 2026-10-29",
   "original_byte_checks": 100,
   "mod_count": 7,
   "notes": [
     "60 FPS mapping inherited from the previously hardware-tested v1.43 package; third site was originally inferred without v1.41 code context.",
     "FOV setter is a unique STR S0,[X0,#0x230];RET sequence. Its helper preserves the original store/return after multiplying by 1.375.",
-    "LOD instruction relocated by nearby setting-call structure and expected original bytes, without the old executable for full context comparison; effect needs gameplay confirmation.",
+    "LOD instruction relocated by nearby setting-call structure and expected original bytes, without the old executable for full context comparison; effect reported working by M-Essa11 in Eden.",
     "Helpers use verified three-NOP padding after RET; no direct original B/BL/B.cond/CBZ/CBNZ/TBZ/TBNZ targets those slots.",
     "Ultrawide keeps the inherited active FMOV S0,#2.375. The inherited aspect-load helper remains dormant; its address calculation and return are nevertheless relocated correctly.",
-    "SDK hash matches the reference SDK. 120 FPS remains static and has known slowdown reports from v1.41; real-time game speed is unverified here.",
-    "4K and ultrawide PAK compatibility, effective resolution, HUD alignment, and all camera/LOD behavior require emulator testing."
+    "SDK hash matches the reference SDK. 120 FPS remains static and has known slowdown reports from v1.41; M-Essa11 reports the v1.43 set working in Eden; the historical slowdown limitation remains relevant on other setups.",
+    "M-Essa11 reports all seven mods working in Eden. Exact internal resolution has not been instrumented; other emulators and configurations remain unverified."
   ],
   "patches": {
     "[1920x1080 V1.43]": [

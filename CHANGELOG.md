@@ -6,7 +6,7 @@
 - Rebuild FOV branches and relocate graphics, HUD and timing changes.
 - Include the original 4K and ultrawide configuration archives.
 - Verify 100 writes against the target main and SDK, and check the packaged files.
-- Include installation instructions and known limitations. Full emulator gameplay testing is still pending.
+- Include installation instructions and known limitations. Tested all seven mods in Eden on Windows.
 
 
 ## v1.43 Atmosphere hardware package

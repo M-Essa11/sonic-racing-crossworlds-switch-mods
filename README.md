@@ -19,7 +19,7 @@ Includes 60 FPS, 120 FPS, 1080p, 4K, 3440×1440 ultrawide with adjusted HUD, imp
 
 Open the game's mod data location in Eden and extract the seven mod folders there. Disable v1.41 mods. Choose one FPS option and one resolution option. Start with 60 FPS; the 120 FPS option may cause slow motion.
 
-All 100 patch writes passed static checks. The complete v1.43 emulator set still needs in-game testing. [Installation and testing guide](emulator/v1.43/README.md) · [Validation details](emulator/v1.43/validation.json).
+Tested all seven mods in Eden on Windows. All 100 patch writes also passed static checks. [Installation and testing guide](emulator/v1.43/README.md) · [Validation details](emulator/v1.43/validation.json).
 
 The v1.41 files below remain available for that older update.
 
