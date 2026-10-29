@@ -1,21 +1,31 @@
-# Sonic Racing: CrossWorlds — Switch Mods
+# Sonic Racing: CrossWorlds â€” Switch Mods
 
 ![Release](https://img.shields.io/badge/status-released-green)
-![Game version](https://img.shields.io/badge/game-v1.43_hardware_%7C_v1.41_emulator-blue)
+![Game version](https://img.shields.io/badge/game-v1.43_hardware_and_emulator-blue)
 
 ## v1.43 for Switch / Switch Lite (Atmosphere)
 
-**[Download the v1.43 Atmosphere ZIP](https://github.com/M-Essa11/sonic-racing-crossworlds-switch-mods/releases/download/v1.43-atmosphere.1/Sonic-Racing-CrossWorlds-v1.43-Atmosphere.zip)** — includes **60 FPS + resolution** patches for Build ID `CF6A61882F2ADE94` (Title ID `01006E001823C000`).
+**[Download the v1.43 Atmosphere ZIP](https://github.com/M-Essa11/sonic-racing-crossworlds-switch-mods/releases/download/v1.43-atmosphere.1/Sonic-Racing-CrossWorlds-v1.43-Atmosphere.zip)** â€” includes **60 FPS + resolution** patches for Build ID `CF6A61882F2ADE94` (Title ID `01006E001823C000`).
 
 I tested both patches together on my Switch Lite running Atmosphere, and they work well. Merge the ZIP's `atmosphere` folder into the SD root and keep the two `.ips` files in their separate folders. Fully close and reopen the game. No SaltySD/FPSLocker configuration is required. See the **[installation guide, folder structure and rollback instructions](hardware/v1.43/README.md)**.
 
-The resolution patch targets 1080p docked / 720p handheld. Performance can vary, and I haven’t tested every mode or other Switch models. [Validation details](hardware/v1.43/validation.json).
+The resolution patch targets 1080p docked / 720p handheld. Performance can vary, and I havenâ€™t tested every mode or other Switch models. [Validation details](hardware/v1.43/validation.json).
 
-**The seven emulator mods below still target v1.41. Only the two Atmosphere patches above target v1.43.**
+## v1.43 emulator package
+
+**[Download the v1.43 emulator ZIP](https://github.com/M-Essa11/sonic-racing-crossworlds-switch-mods/releases/download/v1.43-emulator.1/Sonic-Racing-CrossWorlds-v1.43-Emulator.zip)**
+
+Includes 60 FPS, 120 FPS, 1080p, 4K, 3440×1440 ultrawide with adjusted HUD, improved FOV and improved LOD for Build ID `CF6A61882F2ADE943495CF2918A73E07`.
+
+Open the game's mod data location in Eden and extract the seven mod folders there. Disable v1.41 mods. Choose one FPS option and one resolution option. Start with 60 FPS; the 120 FPS option may cause slow motion.
+
+All 100 patch writes passed static checks. The complete v1.43 emulator set still needs in-game testing. [Installation and testing guide](emulator/v1.43/README.md) · [Validation details](emulator/v1.43/validation.json).
+
+The v1.41 files below remain available for that older update.
 
 ## v1.41 emulator package
 
-Community ports of **Fl4sh9174's earlier-version patches** for the Nintendo Switch version of Sonic Racing: CrossWorlds. Includes **60 FPS, 120 FPS, 1080p, 4K, 3440×1440 ultrawide with adjusted HUD, improved FOV, and improved level of detail**.
+Community ports of **Fl4sh9174's earlier-version patches** for the Nintendo Switch version of Sonic Racing: CrossWorlds. Includes **60 FPS, 120 FPS, 1080p, 4K, 3440Ã—1440 ultrawide with adjusted HUD, improved FOV, and improved level of detail**.
 
 **Tested the full v1.41 set in Eden on Windows.** Slow motion has been reported with the 120 FPS option. Feedback and bug reports are welcome. This is an independent port, not an official Fl4sh release or endorsement.
 
@@ -45,7 +55,7 @@ These patches target this exact executable build. Other game updates and environ
 | --- | --- |
 | 60 FPS | Ports the frame-rate instructions and timing/settings table from the original patch |
 | 120 FPS | Higher frame-rate option; requires both included ExeFS patch files; see slowdown note above |
-| 3840x2160 / 4K | Resolution patch plus Fl4sh’s original configuration archive |
+| 3840x2160 / 4K | Resolution patch plus Fl4shâ€™s original configuration archive |
 | 3440x1440 Ultrawide Adjusted HUD | Aspect, menu/cutscene FOV adjustments, and original configuration archive; use stretch-to-window |
 | 1920x1080 | Ports the resolution adjustment; original patch describes 1080p docked / 720p handheld |
 | Improved FOV | Multiplies the affected FOV value by 1.375 |
@@ -83,14 +93,14 @@ For a repository checkout, copy the folders **inside `mods/`**, not the `mods` p
 
 Six code sites were located using unique 128-byte instruction patterns with relocation-sensitive fields masked. The original instruction bytes matched at every patched location. The FPS table had a unique exact 132-byte match. The FOV branch was recalculated to matching three-instruction padding after a return. The additional ultrawide sites were matched with unique instruction contexts; its helper references and return branch were relocated. The 120 FPS SDK executable is byte-identical to the reference version, so its SDK patch is retained. All **100 writes across the seven alternatives** were checked against the relevant target executable before packaging. The two original configuration archives were copied byte-for-byte.
 
-The reference executable had a zeroed Build ID and unverified provenance; it was useful because its code matched the original patch sites. This limits certainty; user testing does not establish compatibility with every game mode or system. See [`validation.json`](validation.json) for offsets, original bytes, replacement bytes, target hash, and testing status. Static checks do not establish gameplay correctness.
+The reference executable had a zeroed Build ID and unverified provenance; it was useful because its code matched the original patch sites. This limits certainty; user testing does not establish compatibility with every game mode or system. See [`v1.41 reference data`](tools/v141-reference.json) for offsets, original bytes, replacement bytes, target hash, and testing status. Static checks do not establish gameplay correctness.
 
 ## Credits and rights
 
-Original patch work: **[Fl4sh9174](https://github.com/Fl4sh9174)** — [upstream mod repository](https://github.com/Fl4sh9174/Switch-Emulator-Ultrawide-FPS-Mods). [Support Fl4sh on Ko-fi](https://ko-fi.com/Fl4sh9174).
+Original patch work: **[Fl4sh9174](https://github.com/Fl4sh9174)** â€” [upstream mod repository](https://github.com/Fl4sh9174/Switch-Emulator-Ultrawide-FPS-Mods). [Support Fl4sh on Ko-fi](https://ko-fi.com/Fl4sh9174).
 
 Community ports by M-Essa11. Credit for the original patches goes to Fl4sh9174.
 
 No upstream license was detected when preparing this release. This repository does not claim to relicense the original patch work or grant rights beyond those held by the respective authors. Game names and trademarks belong to their owners.
 
-The package contains patch text, Fl4sh’s two configuration PAK archives, and documentation. No game executables, firmware, keys, saves, or personal emulator logs are included.
+The package contains patch text, Fl4shâ€™s two configuration PAK archives, and documentation. No game executables, firmware, keys, saves, or personal emulator logs are included.

@@ -1,5 +1,14 @@
 # Changelog
 
+## v1.43 emulator package
+
+- Port all seven emulator options to v1.43.
+- Rebuild FOV branches and relocate graphics, HUD and timing changes.
+- Include the original 4K and ultrawide configuration archives.
+- Verify 100 writes against the target main and SDK, and check the packaged files.
+- Include installation instructions and known limitations. Full emulator gameplay testing is still pending.
+
+
 ## v1.43 Atmosphere hardware package
 
 - Add SD-ready 60 FPS and resolution IPS32 patches for Build ID CF6A61882F2ADE94.

@@ -1,0 +1,749 @@
+{
+  "version": "1.43",
+  "title_id": "01006E001823C000",
+  "build_id": "CF6A61882F2ADE943495CF2918A73E07",
+  "main_sha256": "0bc75b9418f8b0ce95db6eb79a5b67473a9e4924fd44464254df6bf8199cc35f",
+  "sdk_build_id": "AD9EE4518B1D8CA811FBDF35FC4F26D5FC1ADA57",
+  "sdk_sha256": "085c580b2e172404c48f9ed84caf7a47895269c1df664fe4a0cad02b880243e2",
+  "status": "release_static_checks_passed",
+  "runtime_tested": false,
+  "original_byte_checks": 100,
+  "mod_count": 7,
+  "notes": [
+    "60 FPS mapping inherited from the previously hardware-tested v1.43 package; third site was originally inferred without v1.41 code context.",
+    "FOV setter is a unique STR S0,[X0,#0x230];RET sequence. Its helper preserves the original store/return after multiplying by 1.375.",
+    "LOD instruction relocated by nearby setting-call structure and expected original bytes, without the old executable for full context comparison; effect needs gameplay confirmation.",
+    "Helpers use verified three-NOP padding after RET; no direct original B/BL/B.cond/CBZ/CBNZ/TBZ/TBNZ targets those slots.",
+    "Ultrawide keeps the inherited active FMOV S0,#2.375. The inherited aspect-load helper remains dormant; its address calculation and return are nevertheless relocated correctly.",
+    "SDK hash matches the reference SDK. 120 FPS remains static and has known slowdown reports from v1.41; real-time game speed is unverified here.",
+    "4K and ultrawide PAK compatibility, effective resolution, HUD alignment, and all camera/LOD behavior require emulator testing."
+  ],
+  "patches": {
+    "[1920x1080 V1.43]": [
+      {
+        "module": "main",
+        "old_v141_offset": "00732A48",
+        "offset": "00732A48",
+        "original": "0018211e",
+        "replacement": "00102e1e"
+      }
+    ],
+    "[60 FPS V1.43]": [
+      {
+        "module": "main",
+        "old_v141_offset": "016F9FD4",
+        "offset": "016F95D4",
+        "original": "0a912a39",
+        "replacement": "1f912a39"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "04BD191C",
+        "offset": "04BD2D9C",
+        "original": "0d3ea852",
+        "replacement": "0d4ea852"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "03F6DC7C",
+        "offset": "03F6EC3C",
+        "original": "68926a39",
+        "replacement": "e8008052"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFB0",
+        "offset": "05CEFFB0",
+        "original": "00000000",
+        "replacement": "00000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFB4",
+        "offset": "05CEFFB4",
+        "original": "19000000",
+        "replacement": "19000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFB8",
+        "offset": "05CEFFB8",
+        "original": "32000000",
+        "replacement": "32000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFBC",
+        "offset": "05CEFFBC",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFC0",
+        "offset": "05CEFFC0",
+        "original": "02000000",
+        "replacement": "01000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFC4",
+        "offset": "05CEFFC4",
+        "original": "0ad7233d",
+        "replacement": "0ad7233d"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFC8",
+        "offset": "05CEFFC8",
+        "original": "0ad7a33c",
+        "replacement": "0ad7a33c"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFCC",
+        "offset": "05CEFFCC",
+        "original": "9a99993f",
+        "replacement": "0000803f"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFD0",
+        "offset": "05CEFFD0",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFD4",
+        "offset": "05CEFFD4",
+        "original": "1e000000",
+        "replacement": "3c000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFD8",
+        "offset": "05CEFFD8",
+        "original": "3c000000",
+        "replacement": "3c000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFDC",
+        "offset": "05CEFFDC",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFE0",
+        "offset": "05CEFFE0",
+        "original": "02000000",
+        "replacement": "01000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFE4",
+        "offset": "05CEFFE4",
+        "original": "8988083d",
+        "replacement": "8988883c"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFE8",
+        "offset": "05CEFFE8",
+        "original": "8988883c",
+        "replacement": "8988883c"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFEC",
+        "offset": "05CEFFEC",
+        "original": "0000803f",
+        "replacement": "0000803f"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFF0",
+        "offset": "05CEFFF0",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFF4",
+        "offset": "05CEFFF4",
+        "original": "32000000",
+        "replacement": "32000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFF8",
+        "offset": "05CEFFF8",
+        "original": "32000000",
+        "replacement": "32000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFFC",
+        "offset": "05CEFFFC",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE000",
+        "offset": "05CF0000",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE004",
+        "offset": "05CF0004",
+        "original": "0ad7a33c",
+        "replacement": "0ad7a33c"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE008",
+        "offset": "05CF0008",
+        "original": "0ad7a33c",
+        "replacement": "0ad7a33c"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE00C",
+        "offset": "05CF000C",
+        "original": "9a99993f",
+        "replacement": "0000803f"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE010",
+        "offset": "05CF0010",
+        "original": "03000000",
+        "replacement": "03000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE014",
+        "offset": "05CF0014",
+        "original": "3c000000",
+        "replacement": "3c000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE018",
+        "offset": "05CF0018",
+        "original": "3c000000",
+        "replacement": "3c000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE01C",
+        "offset": "05CF001C",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE020",
+        "offset": "05CF0020",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE024",
+        "offset": "05CF0024",
+        "original": "8988883c",
+        "replacement": "8988883c"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE028",
+        "offset": "05CF0028",
+        "original": "8988883c",
+        "replacement": "8988883c"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE02C",
+        "offset": "05CF002C",
+        "original": "0000803f",
+        "replacement": "0000803f"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE030",
+        "offset": "05CF0030",
+        "original": "03000000",
+        "replacement": "03000000"
+      }
+    ],
+    "[Improved FOV V1.43]": [
+      {
+        "module": "main",
+        "old_v141_offset": "00E42FD4",
+        "offset": "00E43054",
+        "original": "003002bd",
+        "replacement": "01d02e1e"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "00E42FD8",
+        "offset": "00E43058",
+        "original": "c0035fd6",
+        "replacement": "471ef714"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "04C094F4",
+        "offset": "04C0A974",
+        "original": "1f2003d5",
+        "replacement": "0008211e"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "04C094F8",
+        "offset": "04C0A978",
+        "original": "1f2003d5",
+        "replacement": "003002bd"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "04C094FC",
+        "offset": "04C0A97C",
+        "original": "1f2003d5",
+        "replacement": "c0035fd6"
+      }
+    ],
+    "[Improved Level of Detail V1.43]": [
+      {
+        "module": "main",
+        "old_v141_offset": "00DE89C8",
+        "offset": "00DE89B8",
+        "original": "600640bd",
+        "replacement": "00103a1e"
+      }
+    ],
+    "[120 FPS V1.43]": [
+      {
+        "module": "main",
+        "old_v141_offset": "016F9FD4",
+        "offset": "016F95D4",
+        "original": "0a912a39",
+        "replacement": "1f912a39"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "04BD191C",
+        "offset": "04BD2D9C",
+        "original": "0d3ea852",
+        "replacement": "0d4ea852"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "03F6DC7C",
+        "offset": "03F6EC3C",
+        "original": "68926a39",
+        "replacement": "e8008052"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFB0",
+        "offset": "05CEFFB0",
+        "original": "00000000",
+        "replacement": "00000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFB4",
+        "offset": "05CEFFB4",
+        "original": "19000000",
+        "replacement": "78000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFB8",
+        "offset": "05CEFFB8",
+        "original": "32000000",
+        "replacement": "78000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFBC",
+        "offset": "05CEFFBC",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFC0",
+        "offset": "05CEFFC0",
+        "original": "02000000",
+        "replacement": "01000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFC4",
+        "offset": "05CEFFC4",
+        "original": "0ad7233d",
+        "replacement": "0ad7233d"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFC8",
+        "offset": "05CEFFC8",
+        "original": "0ad7a33c",
+        "replacement": "0ad7a33c"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFCC",
+        "offset": "05CEFFCC",
+        "original": "9a99993f",
+        "replacement": "0000803f"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFD0",
+        "offset": "05CEFFD0",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFD4",
+        "offset": "05CEFFD4",
+        "original": "1e000000",
+        "replacement": "78000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFD8",
+        "offset": "05CEFFD8",
+        "original": "3c000000",
+        "replacement": "78000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFDC",
+        "offset": "05CEFFDC",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFE0",
+        "offset": "05CEFFE0",
+        "original": "02000000",
+        "replacement": "01000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFE4",
+        "offset": "05CEFFE4",
+        "original": "8988083d",
+        "replacement": "8988083c"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFE8",
+        "offset": "05CEFFE8",
+        "original": "8988883c",
+        "replacement": "8988883c"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFEC",
+        "offset": "05CEFFEC",
+        "original": "0000803f",
+        "replacement": "0000003f"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFF0",
+        "offset": "05CEFFF0",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFF4",
+        "offset": "05CEFFF4",
+        "original": "32000000",
+        "replacement": "78000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFF8",
+        "offset": "05CEFFF8",
+        "original": "32000000",
+        "replacement": "78000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEDFFC",
+        "offset": "05CEFFFC",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE000",
+        "offset": "05CF0000",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE004",
+        "offset": "05CF0004",
+        "original": "0ad7a33c",
+        "replacement": "0ad7a33c"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE008",
+        "offset": "05CF0008",
+        "original": "0ad7a33c",
+        "replacement": "0ad7a33c"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE00C",
+        "offset": "05CF000C",
+        "original": "9a99993f",
+        "replacement": "0000803f"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE010",
+        "offset": "05CF0010",
+        "original": "03000000",
+        "replacement": "01000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE014",
+        "offset": "05CF0014",
+        "original": "3c000000",
+        "replacement": "78000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE018",
+        "offset": "05CF0018",
+        "original": "3c000000",
+        "replacement": "78000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE01C",
+        "offset": "05CF001C",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE020",
+        "offset": "05CF0020",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE024",
+        "offset": "05CF0024",
+        "original": "8988883c",
+        "replacement": "8988083c"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE028",
+        "offset": "05CF0028",
+        "original": "8988883c",
+        "replacement": "8988083c"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE02C",
+        "offset": "05CF002C",
+        "original": "0000803f",
+        "replacement": "0000803f"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05CEE030",
+        "offset": "05CF0030",
+        "original": "03000000",
+        "replacement": "01000000"
+      },
+      {
+        "module": "sdk",
+        "old_v141_offset": "00190620",
+        "offset": "00190620",
+        "original": "ab264fb9",
+        "replacement": "0b008052"
+      }
+    ],
+    "[3440x1440 Ultrawide Adjusted HUD V1.43]": [
+      {
+        "module": "main",
+        "old_v141_offset": "00732A48",
+        "offset": "00732A48",
+        "original": "0018211e",
+        "replacement": "00102e1e"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "00A83994",
+        "offset": "00A83994",
+        "original": "804e42bd",
+        "replacement": "0070201e"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "052E7D04",
+        "offset": "04C0A6D4",
+        "original": "1f2003d5",
+        "replacement": "a87700b0"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "052E7D08",
+        "offset": "04C0A6D8",
+        "original": "1f2003d5",
+        "replacement": "00b547bd"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "052E7D0C",
+        "offset": "04C0A6DC",
+        "original": "1f2003d5",
+        "replacement": "afe4f916"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "05AFD7D4",
+        "offset": "05AFF7B4",
+        "original": "398ee33f",
+        "replacement": "8ee31840"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "009B5AA8",
+        "offset": "009B5AA8",
+        "original": "ec000054",
+        "replacement": "8c000054"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "009B5AAC",
+        "offset": "009B5AAC",
+        "original": "08ad43f9",
+        "replacement": "1f2003d5"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "009B5AB0",
+        "offset": "009B5AB0",
+        "original": "1f0119eb",
+        "replacement": "0854a872"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "009B5AB4",
+        "offset": "009B5AB4",
+        "original": "41a20054",
+        "replacement": "0001271e"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "009B5AB8",
+        "offset": "009B5AB8",
+        "original": "086c8252",
+        "replacement": "48f3a752"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "009B5ABC",
+        "offset": "009B5ABC",
+        "original": "0000088b",
+        "replacement": "0101271e"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "009B5AC0",
+        "offset": "009B5AC0",
+        "original": "003040bd",
+        "replacement": "0008211e"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "01A5DC10",
+        "offset": "01A5DE30",
+        "original": "69c79152",
+        "replacement": "c9719c52"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "01A5DC14",
+        "offset": "01A5DE34",
+        "original": "69fca772",
+        "replacement": "0903a872"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "00EB0224",
+        "offset": "00EB02A4",
+        "original": "68c79152",
+        "replacement": "c8719c52"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "00EB0228",
+        "offset": "00EB02A8",
+        "original": "68fca772",
+        "replacement": "0803a872"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "00F47A00",
+        "offset": "00F47A80",
+        "original": "68c79152",
+        "replacement": "c8719c52"
+      },
+      {
+        "module": "main",
+        "old_v141_offset": "00F47A04",
+        "offset": "00F47A84",
+        "original": "68fca772",
+        "replacement": "0803a872"
+      }
+    ],
+    "[3840x2160 V1.43]": [
+      {
+        "module": "main",
+        "old_v141_offset": "00732A48",
+        "offset": "00732A48",
+        "original": "0018211e",
+        "replacement": "00102e1e"
+      }
+    ]
+  },
+  "configuration_archives": [
+    {
+      "path": "mods/[3440x1440 Ultrawide Adjusted HUD V1.43]/romfs/UNION/Content/Paks/pakchunk0-SwitchFL4SH9174.pak",
+      "sha256": "a823f415b3c333df1071283428ac10ef1bdfb3b03c28e6255242e92520c7918b",
+      "status": "Inherited configuration copied byte-for-byte; v1.43 runtime test pending"
+    },
+    {
+      "path": "mods/[3840x2160 V1.43]/romfs/UNION/Content/Paks/pakchunk0-SwitchFL4SH9174.pak",
+      "sha256": "be1a5ffe6f61d64beb5a96198f6cf092d6bf7cf5cd80ff9ed055ce30ded0623d",
+      "status": "Inherited configuration copied byte-for-byte; v1.43 runtime test pending"
+    }
+  ]
+}

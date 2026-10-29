@@ -5,3 +5,7 @@
 *.keys
 *.log
 __pycache__/
+/.analysis-tools/
+/New folder/
+/analysis-private/
+/SRC 1.43/
