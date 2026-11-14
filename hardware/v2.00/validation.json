@@ -1,0 +1,219 @@
+{
+  "title_id": "01006E001823C000",
+  "build_id": "D2B8094093CE27AE8C624765C054360F",
+  "main_sha256": "555972ddcc9f37bf4d508cfc94279aee59a8cd78582b1e7f2badd4707ed3a8d3",
+  "tested_on_console": true,
+  "writes": {
+    "Static 60FPS": [
+      {
+        "offset": "0x1b04d2c",
+        "original": "0a912a39",
+        "replacement": "1f912a39"
+      },
+      {
+        "offset": "0x4ebeb5c",
+        "original": "0d3ea852",
+        "replacement": "0d4ea852"
+      },
+      {
+        "offset": "0x44e683c",
+        "original": "68926a39",
+        "replacement": "e8008052"
+      },
+      {
+        "offset": "0x5ec3c68",
+        "original": "00000000",
+        "replacement": "00000000"
+      },
+      {
+        "offset": "0x5ec3c6c",
+        "original": "19000000",
+        "replacement": "19000000"
+      },
+      {
+        "offset": "0x5ec3c70",
+        "original": "32000000",
+        "replacement": "32000000"
+      },
+      {
+        "offset": "0x5ec3c74",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "offset": "0x5ec3c78",
+        "original": "02000000",
+        "replacement": "01000000"
+      },
+      {
+        "offset": "0x5ec3c7c",
+        "original": "0ad7233d",
+        "replacement": "0ad7233d"
+      },
+      {
+        "offset": "0x5ec3c80",
+        "original": "0ad7a33c",
+        "replacement": "0ad7a33c"
+      },
+      {
+        "offset": "0x5ec3c84",
+        "original": "9a99993f",
+        "replacement": "0000803f"
+      },
+      {
+        "offset": "0x5ec3c88",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "offset": "0x5ec3c8c",
+        "original": "1e000000",
+        "replacement": "3c000000"
+      },
+      {
+        "offset": "0x5ec3c90",
+        "original": "3c000000",
+        "replacement": "3c000000"
+      },
+      {
+        "offset": "0x5ec3c94",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "offset": "0x5ec3c98",
+        "original": "02000000",
+        "replacement": "01000000"
+      },
+      {
+        "offset": "0x5ec3c9c",
+        "original": "8988083d",
+        "replacement": "8988883c"
+      },
+      {
+        "offset": "0x5ec3ca0",
+        "original": "8988883c",
+        "replacement": "8988883c"
+      },
+      {
+        "offset": "0x5ec3ca4",
+        "original": "0000803f",
+        "replacement": "0000803f"
+      },
+      {
+        "offset": "0x5ec3ca8",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "offset": "0x5ec3cac",
+        "original": "32000000",
+        "replacement": "32000000"
+      },
+      {
+        "offset": "0x5ec3cb0",
+        "original": "32000000",
+        "replacement": "32000000"
+      },
+      {
+        "offset": "0x5ec3cb4",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "offset": "0x5ec3cb8",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "offset": "0x5ec3cbc",
+        "original": "0ad7a33c",
+        "replacement": "0ad7a33c"
+      },
+      {
+        "offset": "0x5ec3cc0",
+        "original": "0ad7a33c",
+        "replacement": "0ad7a33c"
+      },
+      {
+        "offset": "0x5ec3cc4",
+        "original": "9a99993f",
+        "replacement": "0000803f"
+      },
+      {
+        "offset": "0x5ec3cc8",
+        "original": "03000000",
+        "replacement": "03000000"
+      },
+      {
+        "offset": "0x5ec3ccc",
+        "original": "3c000000",
+        "replacement": "3c000000"
+      },
+      {
+        "offset": "0x5ec3cd0",
+        "original": "3c000000",
+        "replacement": "3c000000"
+      },
+      {
+        "offset": "0x5ec3cd4",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "offset": "0x5ec3cd8",
+        "original": "01000000",
+        "replacement": "01000000"
+      },
+      {
+        "offset": "0x5ec3cdc",
+        "original": "8988883c",
+        "replacement": "8988883c"
+      },
+      {
+        "offset": "0x5ec3ce0",
+        "original": "8988883c",
+        "replacement": "8988883c"
+      },
+      {
+        "offset": "0x5ec3ce4",
+        "original": "0000803f",
+        "replacement": "0000803f"
+      },
+      {
+        "offset": "0x5ec3ce8",
+        "original": "03000000",
+        "replacement": "03000000"
+      }
+    ],
+    "720p Handheld Target": [
+      {
+        "offset": "0x14c16d4",
+        "original": "007d40bd",
+        "replacement": "0959a852"
+      },
+      {
+        "offset": "0x14c16dc",
+        "original": "0008211e",
+        "replacement": "2001271e"
+      },
+      {
+        "offset": "0x26325bc",
+        "original": "41008052",
+        "replacement": "e1031f2a"
+      }
+    ]
+  },
+  "resolution": "Requests 100% in the display profile setter and disables the dynamic resolution override at the identified activation site. Targets 720p handheld. Internal pixel dimensions and docked behavior remain unverified.",
+  "status": "stable_user_tested_on_switch_lite",
+  "console_test": {
+    "reported_by": "M-Essa11",
+    "console": "Switch Lite",
+    "result": "Both patches reported working",
+    "internal_resolution_measured": false
+  },
+  "patch_sha256": {
+    "atmosphere/exefs_patches/Sonic Racing CW v2.00 - Static 60FPS/D2B8094093CE27AE8C624765C054360F.ips": "7f30b61b2798daf84d8f8bed56e53f53260e6e245903c08108d65a73406d5491",
+    "atmosphere/exefs_patches/Sonic Racing CW v2.00 - 720p Handheld Target/D2B8094093CE27AE8C624765C054360F.ips": "9b7f6bfd678f6cfff04912b31c2ee4e4cb4187a41c6029323e82d8cddf992022"
+  }
+}

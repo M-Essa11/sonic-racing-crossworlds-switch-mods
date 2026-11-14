@@ -1,7 +1,13 @@
 # Sonic Racing: CrossWorlds â€” Switch Mods
 
 ![Release](https://img.shields.io/badge/status-released-green)
-![Game version](https://img.shields.io/badge/game-v1.43_hardware_and_emulator-blue)
+![Game version](https://img.shields.io/badge/game-v2.00_hardware_%7C_v1.43_emulator-blue)
+
+## v2.00 for Switch and Switch Lite (Atmosphere)
+
+Static **60 FPS** and a **720p handheld target**, tested together on Switch Lite. The patches target Build ID `D2B8094093CE27AE8C624765C054360F`.
+
+[Download the stable v2.00 Atmosphere ZIP](https://github.com/M-Essa11/sonic-racing-crossworlds-switch-mods/releases/download/v2.00-atmosphere.1/Sonic-Racing-CrossWorlds-v2.00-Atmosphere.zip) · [Install guide](hardware/v2.00/README.md)
 
 ## v1.43 for Switch / Switch Lite (Atmosphere)
 

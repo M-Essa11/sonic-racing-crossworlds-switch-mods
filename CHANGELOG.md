@@ -1,5 +1,12 @@
 # Changelog
 
+## v2.00 Atmosphere
+
+- Port static 60 FPS and add a handheld 720p render-scale target.
+- Both patches tested together on Switch Lite.
+- Package the two IPS files, installation guide and validation details.
+
+
 ## v1.43 emulator package
 
 - Port all seven emulator options to v1.43.
