@@ -1,0 +1,9 @@
+@nsobid-D2B8094093CE27AE8C624765C054360F
+@flag offset_shift 0x100
+# CrossWorlds v2.00 [1920x1080 V2.00]
+# Fl4sh9174 original mods. M-Essa11 v2.00 port.
+@enabled
+014C16D4 0959A852
+014C16DC 2001271E
+026325BC E1031F2A
+@stop
